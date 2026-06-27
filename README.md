@@ -27,14 +27,18 @@ El proyecto adopta un patrón de **Arquitectura en Capas (N-Tier)**, garantizand
 ---
 
 ## 📂 3. Estructura del Repositorio
+
+A continuación se detalla la organización de los archivos en este repositorio, optimizada para la trazabilidad y el mantenimiento del sistema:
+
 ```text
 /
-├── docs/                # Documentación técnica, diagramas y actas
-├── src/                 # Código fuente principal
-│   ├── modules/         # Lógica de negocio (auth, inventory, sales)
-│   ├── shared/          # Servicios y utilidades comunes
-│   └── database/        # Scripts de migración y configuración
-├── tests/               # Suite de pruebas unitarias y de integración
-├── .env.example         # Plantilla de variables de entorno
-├── docker-compose.yml   # Orquestación del ambiente de desarrollo
-└── README.md            # Documentación técnica
+├── Script SQL/              # Scripts de base de datos (DDL, Triggers, Procs)
+│   ├── 01_esquema_inicial.sql
+│   ├── 02_integracion_ventas.sql
+│   ├── 03_datos_maestros.sql
+│   ├── 04_automatizacion_triggers.sql
+│   ├── 05_procedimientos_reportes.sql
+│   ├── 06_auditoria_seguridad.sql
+│   └── 07_indices_optimizacion.sql
+├── LÉAME.md                 # Documentación técnica del proyecto
+└── ...
